@@ -1,0 +1,18 @@
+/*
+
+Theme Name: Stone Farm Living Theme
+Theme URI: http://theme.co/x/
+Author: Themeco - Halsey Design
+Author URI: http://theme.co/
+Description: Make all of your modifications to X in this child theme.
+Version: 1.0.0
+Template: x
+
+*/
+
+@import "bourbon/bourbon";
+@import "neat/neat";
+@import "base/base";
+
+@import "partials/global";
+@import "partials/header";

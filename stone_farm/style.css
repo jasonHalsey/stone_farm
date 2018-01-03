@@ -75,16 +75,21 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 /* line 28, scss/partials/_global.scss */
 p {
   font-size: 18px !important;
+  line-height: 2.2 !important;
 }
 
-/* line 31, scss/partials/_global.scss */
+/* line 32, scss/partials/_global.scss */
 .el77.x-text {
   font-size: 18px !important;
 }
 
-/* line 34, scss/partials/_global.scss */
+/* line 35, scss/partials/_global.scss */
 .white_txt {
-  color: #ffffff;
+  color: #ffffff !important;
+}
+/* line 37, scss/partials/_global.scss */
+.white_txt h1, .white_txt h2, .white_txt h3, .white_txt h4, .white_txt h5, .white_txt h6, .white_txt .h1, .white_txt .h2, .white_txt .h3, .white_txt .h4, .white_txt .h5, .white_txt .h6 {
+  color: #ffffff !important;
 }
 
 /* line 1, scss/partials/_home.scss */
@@ -116,6 +121,11 @@ header .x-navbar .desktop .x-nav > li > a {
   color: #2d333a !important;
 }
 
+/* line 17, scss/partials/_header.scss */
+.x-navbar .desktop .sub-menu a {
+  color: #2d333a !important;
+}
+
 /* line 2, scss/partials/_thin-brick-veneer.scss */
 .color_row .x-image {
   display: block !important;
@@ -129,28 +139,29 @@ header .x-navbar .desktop .x-nav > li > a {
 /* line 10, scss/partials/_thin-brick-veneer.scss */
 .color_row .half_text_col {
   padding: 3.0em 2.0em 2.0em;
+  vertical-align: middle !important;
 }
-/* line 13, scss/partials/_thin-brick-veneer.scss */
+/* line 14, scss/partials/_thin-brick-veneer.scss */
 .color_row .half_title_col {
   padding: 2.0em;
 }
-/* line 16, scss/partials/_thin-brick-veneer.scss */
+/* line 17, scss/partials/_thin-brick-veneer.scss */
 .color_row .color_text {
   border-left: 1px solid #ffffff;
   margin-top: 1em !important;
   padding-left: 1em !important;
 }
-/* line 21, scss/partials/_thin-brick-veneer.scss */
+/* line 22, scss/partials/_thin-brick-veneer.scss */
 .color_row .color_descript_txt {
   padding-left: 0 !important;
 }
-/* line 24, scss/partials/_thin-brick-veneer.scss */
+/* line 25, scss/partials/_thin-brick-veneer.scss */
 .color_row p {
   font-size: 18px !important;
-  line-height: 1.9;
+  line-height: 2.2 !important;
 }
 
-/* line 29, scss/partials/_thin-brick-veneer.scss */
+/* line 30, scss/partials/_thin-brick-veneer.scss */
 h3.color_title {
   margin-top: -30%;
   color: #ffffff;
@@ -159,7 +170,7 @@ h3.color_title {
   padding: 0.25em;
 }
 
-/* line 36, scss/partials/_thin-brick-veneer.scss */
+/* line 37, scss/partials/_thin-brick-veneer.scss */
 .brick_sample_col {
   margin: 0px;
   width: 100%;
@@ -172,30 +183,34 @@ h3.color_title {
   opacity: 0;
 }
 @media all and (max-width: 900px) {
-  /* line 36, scss/partials/_thin-brick-veneer.scss */
+  /* line 37, scss/partials/_thin-brick-veneer.scss */
   .brick_sample_col {
     opacity: 1.0;
   }
 }
 
-/* line 39, scss/partials/_thin-brick-veneer.scss */
+/* line 40, scss/partials/_thin-brick-veneer.scss */
 .sf_sub_header {
   text-shadow: 3px 3px 2px black;
 }
-/* line 41, scss/partials/_thin-brick-veneer.scss */
+/* line 42, scss/partials/_thin-brick-veneer.scss */
 .sf_sub_header span {
   text-shadow: 3px 3px 2px black;
 }
 
-/* line 45, scss/partials/_thin-brick-veneer.scss */
+/* line 46, scss/partials/_thin-brick-veneer.scss */
 .sf_sub_header_txt {
   text-shadow: 2px 2px 2px black;
 }
-/* line 47, scss/partials/_thin-brick-veneer.scss */
+/* line 48, scss/partials/_thin-brick-veneer.scss */
 .sf_sub_header_txt span {
   text-shadow: 2px 2px 2px black;
 }
 
+/* line 2, scss/partials/_woocommerce.scss */
+.woocommerce ul.products {
+  max-width: 50%;
+}
 /* line 5, scss/partials/_woocommerce.scss */
 .woocommerce ul.products li div.entry-featured {
   display: inline-block;
@@ -206,8 +221,9 @@ h3.color_title {
   display: inline-block;
   float: left;
   box-shadow: none;
+  width: 100%;
 }
-/* line 15, scss/partials/_woocommerce.scss */
+/* line 16, scss/partials/_woocommerce.scss */
 .woocommerce ul.products li.product {
   float: left;
   overflow: hidden;
@@ -218,17 +234,33 @@ h3.color_title {
   border-radius: 4px;
   box-shadow: 0 0.15em 0.35em 0 rgba(0, 0, 0, 0.135);
 }
-/* line 25, scss/partials/_woocommerce.scss */
+/* line 26, scss/partials/_woocommerce.scss */
 .woocommerce ul.products li.product .entry-header .button {
   position: relative !important;
   top: 0 !important;
   left: 0;
   right: 0;
-  margin: 30% 0 0 !important;
+  margin: 2.5% 0 0 !important;
   padding: 0.45em 0.5em 0.575em;
   display: block;
   font-size: 14px;
   opacity: 1 !important;
+}
+
+/* line 44, scss/partials/_woocommerce.scss */
+.woocommerce ul.products .x-btn, .woocommerce ul.products .button, .woocommerce ul.products [type="submit"] {
+  color: #fff;
+  border-color: #000;
+  background-color: #2d333a;
+  margin-bottom: 0.25em;
+  text-shadow: 0 0.075em 0.075em rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0.25em 0 0 #000, 0 4px 9px rgba(0, 0, 0, 0.75);
+  border-radius: 0.25em;
+}
+
+/* line 53, scss/partials/_woocommerce.scss */
+.woocommerce ul.products li div.entry-featured {
+  display: none;
 }
 
 /* line 1, scss/partials/_buttons.scss */
@@ -239,6 +271,17 @@ h3.color_title {
   text-align: center;
 }
 
+/* line 7, scss/partials/_buttons.scss */
+.cta_dark {
+  color: #fff;
+  border-color: #000;
+  background-color: #2d333a;
+  margin-bottom: 0.25em;
+  text-shadow: 0 0.075em 0.075em rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0.25em 0 0 #000, 0 4px 9px rgba(0, 0, 0, 0.75);
+  border-radius: 0.25em;
+}
+
 /* line 1, scss/partials/_footer.scss */
 footer {
   color: #696969;
@@ -246,4 +289,23 @@ footer {
 /* line 3, scss/partials/_footer.scss */
 footer a {
   color: #696969;
+}
+
+/* line 1, scss/partials/_interiors.scss */
+.slider_50 {
+  margin: 0px;
+  width: 100%;
+  background-size: cover;
+  background-position: 50%;
+}
+/* line 6, scss/partials/_mixins.scss */
+.slider_50 img {
+  visibility: hidden;
+  opacity: 0;
+}
+@media all and (max-width: 900px) {
+  /* line 1, scss/partials/_interiors.scss */
+  .slider_50 {
+    opacity: 1.0;
+  }
 }

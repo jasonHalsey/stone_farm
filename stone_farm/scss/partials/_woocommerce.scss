@@ -1,6 +1,6 @@
 .woocommerce{
 	ul.products{
-		// max-width: 50%;
+		max-width: 50%;
 		li{
 			div.entry-featured{
 				display: inline-block;
@@ -10,6 +10,7 @@
 				display: inline-block;
 				float: left;
 				box-shadow: none;
+				width:100%;
 			}
 		}
 		li.product {
@@ -27,7 +28,7 @@
 		    top: 0!important;
 		    left: 0;
 		    right: 0;
-		    margin: 30% 0 0!important;
+		    margin: 2.5% 0 0!important;
 		    padding: 0.45em 0.5em 0.575em;
 		    display: block;
 		    font-size: 14px;
@@ -40,3 +41,15 @@
 
 } //End WooCommerce Wrapper
 
+.woocommerce ul.products .x-btn, .woocommerce ul.products .button, .woocommerce ul.products [type="submit"] {
+    color: #fff;
+    border-color: #000;
+    background-color: #2d333a;
+    margin-bottom: 0.25em;
+    text-shadow: 0 0.075em 0.075em rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0.25em 0 0 #000, 0 4px 9px rgba(0, 0, 0, 0.75);
+    border-radius: 0.25em;
+}
+.woocommerce ul.products li div.entry-featured {
+    display: none;
+}

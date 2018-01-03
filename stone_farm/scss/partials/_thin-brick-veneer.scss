@@ -9,6 +9,7 @@
 	}
 	.half_text_col{
 		padding:3.0em 2.0em 2.0em;
+		vertical-align: middle!important;
 	}
 	.half_title_col{
 		padding:2.0em;
@@ -23,7 +24,7 @@
 	}
 	p{
 		font-size:$base-font-size;
-		line-height: 1.9;
+		line-height: $base-line-height;
 	}
 }
 h3.color_title{

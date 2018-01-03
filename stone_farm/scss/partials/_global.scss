@@ -27,10 +27,14 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 p{
 	font-size: $base-font-size;
+	line-height: $base-line-height;
 }
 .el77.x-text{
 	font-size: $base-font-size;
 }
 .white_txt{
-	color:$white;
+	color:$white!important;
+	h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+		color:$white!important;
+	}
 }

@@ -1,0 +1,13 @@
+@mixin img_half() {
+  margin: 0px;
+  width: 100%;
+  background-size: cover;
+  background-position: 50%;
+  img{
+    visibility: hidden;
+    opacity: 0;
+  }
+  @media all and (max-width: 900px) {
+    opacity:1.0;
+  }
+}

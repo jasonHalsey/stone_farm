@@ -2,4 +2,14 @@ header{
 	.x-brand{
 		margin-bottom: 22px;
 	}
+	.x-navbar .desktop .x-nav > li > a {
+	    height: 90px;
+	    padding-top: 42px;
+	}
+}
+#menu-item-108 > a > span{
+	color:$sc_blue!important;
+}
+.x-breadcrumb-wrap a, .x-breadcrumbs .delimiter{
+	color:$sc_blue!important;
 }

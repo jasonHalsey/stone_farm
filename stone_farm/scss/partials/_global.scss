@@ -1,12 +1,36 @@
-.white_txt{
-	color:#ffffff;
+body{
+	font-size: $base-font-size;
 }
-
 .x-image{
 	img{
 		width:100%!important;
 	}
 }
 .x-navbar {
-    background-color: #2d333a;
+    background-color: $sc_blue;
+    opacity: 0.8;
+}
+//Set classes on column containing image
+.img_50-50_left{
+  @include img_half;
+}
+.img_50-50_right{
+  @include img_half;
+}
+
+//Typography
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: 'Playfair Display', serif!important;
+    font-style: normal;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+p{
+	font-size: $base-font-size;
+}
+.el77.x-text{
+	font-size: $base-font-size;
+}
+.white_txt{
+	color:$white;
 }

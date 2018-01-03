@@ -9,311 +9,241 @@ Version: 1.0.0
 Template: x
 
 */
-/* line 4, scss/base/_buttons.scss */
-button, [type='button'], [type='reset'], [type='submit'] {
-  appearance: none;
-  background-color: #1565c0;
-  border: 0;
-  border-radius: 3px;
-  color: #fff;
-  cursor: pointer;
-  display: inline-block;
-  font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir", "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans", "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu", "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
-  font-size: 16px;
-  -webkit-font-smoothing: antialiased;
-  font-weight: 600;
-  line-height: 1;
-  padding: 0.75em 1.5em;
-  text-align: center;
-  text-decoration: none;
-  transition: background-color 150ms ease;
-  user-select: none;
-  vertical-align: middle;
-  white-space: nowrap;
-}
-/* line 25, scss/base/_buttons.scss */
-button:hover, [type='button']:hover, [type='reset']:hover, [type='submit']:hover {
-  background-color: #11519a;
-  color: #fff;
-}
-/* line 30, scss/base/_buttons.scss */
-button:focus, [type='button']:focus, [type='reset']:focus, [type='submit']:focus {
-  outline: 3px solid rgba(21, 101, 192, 0.6);
-  outline-offset: 2px;
-}
-/* line 35, scss/base/_buttons.scss */
-button:disabled, [type='button']:disabled, [type='reset']:disabled, [type='submit']:disabled {
-  cursor: not-allowed;
-  opacity: 0.5;
-}
-/* line 39, scss/base/_buttons.scss */
-button:disabled:hover, [type='button']:disabled:hover, [type='reset']:disabled:hover, [type='submit']:disabled:hover {
-  background-color: #1565c0;
-}
-
-/* line 4, scss/base/_forms.scss */
-fieldset {
-  background-color: transparent;
-  border: 0;
-  margin: 0;
-  padding: 0;
-}
-
-/* line 11, scss/base/_forms.scss */
-legend {
-  font-weight: 600;
-  margin-bottom: 0.375em;
-  padding: 0;
-}
-
-/* line 17, scss/base/_forms.scss */
-label {
-  display: block;
-  font-weight: 600;
-  margin-bottom: 0.375em;
-}
-
-/* line 23, scss/base/_forms.scss */
-input,
-select,
-textarea {
-  display: block;
-  font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir", "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans", "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu", "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
-  font-size: 16px;
-}
-
-/* line 31, scss/base/_forms.scss */
-[type='color'], [type='date'], [type='datetime'], [type='datetime-local'], [type='email'], [type='month'], [type='number'], [type='password'], [type='search'], [type='tel'], [type='text'], [type='time'], [type='url'], [type='week'], input:not([type]), textarea {
-  appearance: none;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 3px;
-  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
-  box-sizing: border-box;
-  margin-bottom: 0.75em;
-  padding: 0.5em;
-  transition: border-color 150ms ease;
-  width: 100%;
-}
-/* line 43, scss/base/_forms.scss */
-[type='color']:hover, [type='date']:hover, [type='datetime']:hover, [type='datetime-local']:hover, [type='email']:hover, [type='month']:hover, [type='number']:hover, [type='password']:hover, [type='search']:hover, [type='tel']:hover, [type='text']:hover, [type='time']:hover, [type='url']:hover, [type='week']:hover, input:not([type]):hover, textarea:hover {
-  border-color: #b1b1b1;
-}
-/* line 47, scss/base/_forms.scss */
-[type='color']:focus, [type='date']:focus, [type='datetime']:focus, [type='datetime-local']:focus, [type='email']:focus, [type='month']:focus, [type='number']:focus, [type='password']:focus, [type='search']:focus, [type='tel']:focus, [type='text']:focus, [type='time']:focus, [type='url']:focus, [type='week']:focus, input:not([type]):focus, textarea:focus {
-  border-color: #1565c0;
-  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(21, 101, 192, 0.7);
-  outline: none;
-}
-/* line 53, scss/base/_forms.scss */
-[type='color']:disabled, [type='date']:disabled, [type='datetime']:disabled, [type='datetime-local']:disabled, [type='email']:disabled, [type='month']:disabled, [type='number']:disabled, [type='password']:disabled, [type='search']:disabled, [type='tel']:disabled, [type='text']:disabled, [type='time']:disabled, [type='url']:disabled, [type='week']:disabled, input:not([type]):disabled, textarea:disabled {
-  background-color: #f2f2f2;
-  cursor: not-allowed;
-}
-/* line 57, scss/base/_forms.scss */
-[type='color']:disabled:hover, [type='date']:disabled:hover, [type='datetime']:disabled:hover, [type='datetime-local']:disabled:hover, [type='email']:disabled:hover, [type='month']:disabled:hover, [type='number']:disabled:hover, [type='password']:disabled:hover, [type='search']:disabled:hover, [type='tel']:disabled:hover, [type='text']:disabled:hover, [type='time']:disabled:hover, [type='url']:disabled:hover, [type='week']:disabled:hover, input:not([type]):disabled:hover, textarea:disabled:hover {
-  border: 1px solid #ddd;
-}
-/* line 62, scss/base/_forms.scss */
-[type='color']::placeholder, [type='date']::placeholder, [type='datetime']::placeholder, [type='datetime-local']::placeholder, [type='email']::placeholder, [type='month']::placeholder, [type='number']::placeholder, [type='password']::placeholder, [type='search']::placeholder, [type='tel']::placeholder, [type='text']::placeholder, [type='time']::placeholder, [type='url']::placeholder, [type='week']::placeholder, input:not([type])::placeholder, textarea::placeholder {
-  color: #858585;
-}
-
-/* line 67, scss/base/_forms.scss */
-textarea {
-  resize: vertical;
-}
-
-/* line 71, scss/base/_forms.scss */
-[type="checkbox"],
-[type="radio"] {
-  display: inline;
-  margin-right: 0.375em;
-}
-
-/* line 77, scss/base/_forms.scss */
-[type="file"] {
-  margin-bottom: 0.75em;
-  width: 100%;
-}
-
-/* line 82, scss/base/_forms.scss */
-select {
-  margin-bottom: 0.75em;
-  width: 100%;
-}
-
-/* line 91, scss/base/_forms.scss */
-[type="checkbox"]:focus,
-[type="radio"]:focus,
-[type="file"]:focus,
-select:focus {
-  outline: 3px solid rgba(21, 101, 192, 0.6);
-  outline-offset: 2px;
-}
-
-/* line 1, scss/base/_layout.scss */
-html {
-  box-sizing: border-box;
-}
-
-/* line 5, scss/base/_layout.scss */
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-/* line 11, scss/base/_layout.scss */
-html,
-body {
-  height: 100%;
-}
-
-/* line 16, scss/base/_layout.scss */
-body {
-  margin: 0;
-}
-
-/* line 1, scss/base/_lists.scss */
-ul,
-ol {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-/* line 8, scss/base/_lists.scss */
-dl {
-  margin: 0;
-}
-
-/* line 12, scss/base/_lists.scss */
-dt {
-  font-weight: 600;
-  margin: 0;
-}
-
-/* line 17, scss/base/_lists.scss */
-dd {
-  margin: 0;
-}
-
-/* line 1, scss/base/_media.scss */
-figure {
-  margin: 0;
-}
-
-/* line 5, scss/base/_media.scss */
-img,
-picture {
-  margin: 0;
-  max-width: 100%;
-}
-
-/* line 1, scss/base/_tables.scss */
-table {
-  border-collapse: collapse;
-  margin: 1.5em 0;
-  table-layout: fixed;
-  text-align: left;
-  width: 100%;
-}
-
-/* line 9, scss/base/_tables.scss */
-thead {
-  line-height: 1.2;
-  vertical-align: bottom;
-}
-
-/* line 14, scss/base/_tables.scss */
-tbody {
-  vertical-align: top;
-}
-
-/* line 18, scss/base/_tables.scss */
-tr {
-  border-bottom: 1px solid #ddd;
-}
-
-/* line 22, scss/base/_tables.scss */
-th {
-  font-weight: 600;
-}
-
-/* line 26, scss/base/_tables.scss */
-th,
-td {
-  padding: 0.75em 0.75em 0.75em 0;
-}
-
-/* line 1, scss/base/_typography.scss */
-html {
-  color: #333;
-  font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir", "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans", "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu", "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
-  font-size: 100%;
-  line-height: 1.5;
-}
-
-/* line 8, scss/base/_typography.scss */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir", "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans", "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu", "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
-  font-size: 1.25em;
-  line-height: 1.2;
-  margin: 0 0 0.75em;
-}
-
-/* line 20, scss/base/_typography.scss */
-p {
-  margin: 0 0 0.75em;
-}
-
-/* line 24, scss/base/_typography.scss */
-a {
-  color: #1565c0;
-  text-decoration-skip: ink;
-  transition: color 150ms ease;
-}
-/* line 29, scss/base/_typography.scss */
-a:hover {
-  color: #104c90;
-}
-/* line 33, scss/base/_typography.scss */
-a:focus {
-  outline: 3px solid rgba(21, 101, 192, 0.6);
-  outline-offset: 2px;
-}
-
-/* line 39, scss/base/_typography.scss */
-hr {
-  border-bottom: 1px solid #ddd;
-  border-left: 0;
-  border-right: 0;
-  border-top: 0;
-  margin: 1.5em 0;
-}
-
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display);
 /* line 1, scss/partials/_global.scss */
-.white_txt {
-  color: #ffffff;
+body {
+  font-size: 18px !important;
 }
 
-/* line 6, scss/partials/_global.scss */
+/* line 5, scss/partials/_global.scss */
 .x-image img {
   width: 100% !important;
 }
 
-/* line 10, scss/partials/_global.scss */
+/* line 9, scss/partials/_global.scss */
 .x-navbar {
   background-color: #2d333a;
+  opacity: 0.8;
+}
+
+/* line 14, scss/partials/_global.scss */
+.img_50-50_left {
+  margin: 0px;
+  width: 100%;
+  background-size: cover;
+  background-position: 50%;
+}
+/* line 6, scss/partials/_mixins.scss */
+.img_50-50_left img {
+  visibility: hidden;
+  opacity: 0;
+}
+@media all and (max-width: 900px) {
+  /* line 14, scss/partials/_global.scss */
+  .img_50-50_left {
+    opacity: 1.0;
+  }
+}
+
+/* line 17, scss/partials/_global.scss */
+.img_50-50_right {
+  margin: 0px;
+  width: 100%;
+  background-size: cover;
+  background-position: 50%;
+}
+/* line 6, scss/partials/_mixins.scss */
+.img_50-50_right img {
+  visibility: hidden;
+  opacity: 0;
+}
+@media all and (max-width: 900px) {
+  /* line 17, scss/partials/_global.scss */
+  .img_50-50_right {
+    opacity: 1.0;
+  }
+}
+
+/* line 22, scss/partials/_global.scss */
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: "Playfair Display", serif !important;
+  font-style: normal;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+/* line 28, scss/partials/_global.scss */
+p {
+  font-size: 18px !important;
+}
+
+/* line 31, scss/partials/_global.scss */
+.el77.x-text {
+  font-size: 18px !important;
+}
+
+/* line 34, scss/partials/_global.scss */
+.white_txt {
+  color: #ffffff;
+}
+
+/* line 1, scss/partials/_home.scss */
+.hero_cta_row {
+  bottom: 20%;
+  display: block;
+  position: absolute !important;
+  width: 100%;
+  text-align: center;
 }
 
 /* line 2, scss/partials/_header.scss */
 header .x-brand {
   margin-bottom: 22px;
+}
+/* line 5, scss/partials/_header.scss */
+header .x-navbar .desktop .x-nav > li > a {
+  height: 90px;
+  padding-top: 42px;
+}
+
+/* line 10, scss/partials/_header.scss */
+#menu-item-108 > a > span {
+  color: #2d333a !important;
+}
+
+/* line 13, scss/partials/_header.scss */
+.x-breadcrumb-wrap a, .x-breadcrumbs .delimiter {
+  color: #2d333a !important;
+}
+
+/* line 2, scss/partials/_thin-brick-veneer.scss */
+.color_row .x-image {
+  display: block !important;
+}
+/* line 5, scss/partials/_thin-brick-veneer.scss */
+.color_row img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+/* line 10, scss/partials/_thin-brick-veneer.scss */
+.color_row .half_text_col {
+  padding: 3.0em 2.0em 2.0em;
+}
+/* line 13, scss/partials/_thin-brick-veneer.scss */
+.color_row .half_title_col {
+  padding: 2.0em;
+}
+/* line 16, scss/partials/_thin-brick-veneer.scss */
+.color_row .color_text {
+  border-left: 1px solid #ffffff;
+  margin-top: 1em !important;
+  padding-left: 1em !important;
+}
+/* line 21, scss/partials/_thin-brick-veneer.scss */
+.color_row .color_descript_txt {
+  padding-left: 0 !important;
+}
+/* line 24, scss/partials/_thin-brick-veneer.scss */
+.color_row p {
+  font-size: 18px !important;
+  line-height: 1.9;
+}
+
+/* line 29, scss/partials/_thin-brick-veneer.scss */
+h3.color_title {
+  margin-top: -30%;
+  color: #ffffff;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0.25em;
+}
+
+/* line 36, scss/partials/_thin-brick-veneer.scss */
+.brick_sample_col {
+  margin: 0px;
+  width: 100%;
+  background-size: cover;
+  background-position: 50%;
+}
+/* line 6, scss/partials/_mixins.scss */
+.brick_sample_col img {
+  visibility: hidden;
+  opacity: 0;
+}
+@media all and (max-width: 900px) {
+  /* line 36, scss/partials/_thin-brick-veneer.scss */
+  .brick_sample_col {
+    opacity: 1.0;
+  }
+}
+
+/* line 39, scss/partials/_thin-brick-veneer.scss */
+.sf_sub_header {
+  text-shadow: 3px 3px 2px black;
+}
+/* line 41, scss/partials/_thin-brick-veneer.scss */
+.sf_sub_header span {
+  text-shadow: 3px 3px 2px black;
+}
+
+/* line 45, scss/partials/_thin-brick-veneer.scss */
+.sf_sub_header_txt {
+  text-shadow: 2px 2px 2px black;
+}
+/* line 47, scss/partials/_thin-brick-veneer.scss */
+.sf_sub_header_txt span {
+  text-shadow: 2px 2px 2px black;
+}
+
+/* line 5, scss/partials/_woocommerce.scss */
+.woocommerce ul.products li div.entry-featured {
+  display: inline-block;
+  float: left;
+}
+/* line 9, scss/partials/_woocommerce.scss */
+.woocommerce ul.products li div.entry-wrap {
+  display: inline-block;
+  float: left;
+  box-shadow: none;
+}
+/* line 15, scss/partials/_woocommerce.scss */
+.woocommerce ul.products li.product {
+  float: left;
+  overflow: hidden;
+  position: relative;
+  margin: 0 4% 4.5% 0;
+  padding: 0.75em !important;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 0.15em 0.35em 0 rgba(0, 0, 0, 0.135);
+}
+/* line 25, scss/partials/_woocommerce.scss */
+.woocommerce ul.products li.product .entry-header .button {
+  position: relative !important;
+  top: 0 !important;
+  left: 0;
+  right: 0;
+  margin: 30% 0 0 !important;
+  padding: 0.45em 0.5em 0.575em;
+  display: block;
+  font-size: 14px;
+  opacity: 1 !important;
+}
+
+/* line 1, scss/partials/_buttons.scss */
+.ghost_wh {
+  border: 1px solid #ffffff;
+  background-color: transparent !important;
+  padding: 0.5em;
+  text-align: center;
+}
+
+/* line 1, scss/partials/_footer.scss */
+footer {
+  color: #696969;
+}
+/* line 3, scss/partials/_footer.scss */
+footer a {
+  color: #696969;
 }

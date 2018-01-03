@@ -10,9 +10,14 @@ Template: x
 
 */
 
-@import "bourbon/bourbon";
-@import "neat/neat";
-@import "base/base";
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display);
 
+@import "partials/variables";
+@import "partials/mixins";
 @import "partials/global";
+@import "partials/home";
 @import "partials/header";
+@import "partials/thin-brick-veneer";
+@import "partials/woocommerce";
+@import "partials/buttons";
+@import "partials/footer";

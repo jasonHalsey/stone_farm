@@ -2,3 +2,43 @@
   @include img_half;
 }
 
+//Reclaimed Cobbles
+.specifications{
+  width:70%;
+  margin-top: 2.0em!important;
+  display:block;
+  @media all and (max-width: 900px) {
+    width:100%;
+  }
+  h3{
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    font-size: 2.0em;
+    width:100%;
+    border-bottom: 1px solid $dk_grey;
+    margin-bottom: 0.75em;
+  }
+  p{
+    font-size: 0.75em; 
+  }
+  .spec_row{
+    @include clearfix;
+    display: block;
+    width: 100%;
+    padding: 0 1.0em;
+  }
+  hr{
+    border-bottom: 1px solid $med_grey;
+  }
+  .label{
+    display: inline-block;
+    float:left;
+    width:45%;
+  }
+  .spec_val{
+    display: inline-block;
+    float:right;
+    width:45%;
+    text-align: right;
+  }
+}

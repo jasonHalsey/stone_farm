@@ -1,0 +1,39 @@
+.x-off-canvas-content{
+	padding-left: 1em!important;
+	> div{
+		padding: 0!important;
+	}
+}
+form.jotform-form{
+	font-family: $main-body!important;
+	div.form-all{
+		ul.form-section{
+			list-style-type: none!important;
+			margin: 0 0 1.313em 0!important;
+			.form-input-wide{
+				div.form-buttons-wrapper{
+					[type="submit"]{
+						color: #fff;
+					    border-color: #000!important;
+					    background-color: #2d333a!important;
+					    margin-bottom: 0.25em;
+					    text-shadow: 0 0.075em 0.075em rgba(0,0,0,0.5);
+					    box-shadow:none!important;
+					    border-radius: 0.25em;
+					    &:hover{
+					    	background-color: #bababa!important;
+					    }
+				    }
+				}
+			}
+		}
+	}
+}
+
+h3.off_canvas_title{
+	margin-top:0!important;
+	font-family: $main-header;
+}
+.x-off-canvas-content{
+  max-width: 30em!important;
+}

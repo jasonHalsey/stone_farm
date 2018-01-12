@@ -1,6 +1,9 @@
 body{
 	font-size: $base-font-size;
 }
+a{
+  transition: all 0.15s linear;
+}
 .x-image{
 	img{
 		width:100%!important;
@@ -46,7 +49,7 @@ body{
 
 //Typography
 h1, h2, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-    font-family: 'Playfair Display', serif!important;
+    font-family: $main-header;
     font-style: normal;
     font-weight: 300;
     text-transform: uppercase;
@@ -64,3 +67,85 @@ p{
 		color:$white!important;
 	}
 }
+body.blog{
+  .x-slider-container.below {
+    border-bottom: 5px solid $sc_blue!important;
+  }
+}
+
+$size: 6em;
+
+i {
+    // border: solid white;
+    // border-width: 0 3px 3px 0;
+    // display: inline-block;
+    // padding: 3px;
+    // position:absolute;
+    // top:45%;
+    // z-index: 555;
+}
+.right_half_circle{
+  background: transparent;
+  height: $size * 2;
+  width: $size;
+  border-bottom-right-radius: $size * 2;
+  border-top-right-radius: $size * 2;
+  position: absolute;
+  top: 45%;
+  left: 0;
+  z-index: 555;
+  opacity: 0.5;
+  border-top: $b_a-arrow_white 5px solid;
+  border-right: $b_a-arrow_white 5px solid;
+  border-bottom: $b_a-arrow_white 5px solid;
+
+}
+.left_half_circle{
+  background: transparent;
+  height: $size * 2;
+  width: $size;
+  border-bottom-left-radius: $size * 2;
+  border-top-left-radius: $size * 2;
+  position: absolute;
+  top: 45%;
+  right: 0;
+  z-index: 555;
+  opacity: 0.5;
+  border-top: $b_a-arrow_white 5px solid;
+  border-left: $b_a-arrow_white 5px solid;
+  border-bottom: $b_a-arrow_white 5px solid;
+
+}
+.right_arrow {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    border: solid white;
+    border-width: 0 8px 8px 0;
+    display: inline-block;
+    padding: 20px;
+    z-index: 555;
+    margin-top: 4em;
+    margin-left: -6px;
+}
+
+.left_arrow {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    border: solid white;
+    border-width: 0 8px 8px 0;
+    display: inline-block;
+    padding: 20px;
+    z-index: 555;
+    margin-top: 4em;
+    margin-left: 37px;
+}
+
+.el67.x-frame {
+    width: 100%;
+    max-width: 100%!important;
+    font-size: 16px;
+    background-color: #ffffff;
+    max-height: 400px;
+    overflow: hidden;
+}
+

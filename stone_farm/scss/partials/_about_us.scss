@@ -1,0 +1,20 @@
+.logo_block{
+	border-top:3px solid $sc_lt_grey;
+}
+.contact_content{
+	a{
+		color:$sc_blue!important;
+		&:hover{
+			color:$sc_lt_grey!important;
+		}
+	}
+	span.contact_address{
+		display: block;
+		line-height: 1.5;
+	}
+	h3{
+		font-family: $main-header;
+		font-size: 2em;
+	    margin-bottom: 1.0em;
+	}
+}

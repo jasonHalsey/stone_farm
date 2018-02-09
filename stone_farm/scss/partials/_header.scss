@@ -17,3 +17,9 @@ header{
 .x-navbar .desktop .sub-menu a{
 	color:$sc_blue!important;
 }
+.x-nav>.right {
+    float: right;
+     @media all and (max-width: 1375px) {
+     	float: none;
+     }
+}

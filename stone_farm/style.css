@@ -126,13 +126,18 @@ p {
 .white_txt h1, .white_txt h2, .white_txt h3, .white_txt h4, .white_txt h5, .white_txt h6, .white_txt .h1, .white_txt .h2, .white_txt .h3, .white_txt .h4, .white_txt .h5, .white_txt .h6 {
   color: #ffffff !important;
 }
+/* line 69, scss/partials/_global.scss */
+.white_txt hr {
+  color: #ffffff;
+  border-color: #ffffff;
+}
 
-/* line 71, scss/partials/_global.scss */
+/* line 75, scss/partials/_global.scss */
 body.blog .x-slider-container.below {
   border-bottom: 5px solid #2d333a !important;
 }
 
-/* line 87, scss/partials/_global.scss */
+/* line 91, scss/partials/_global.scss */
 .right_half_circle {
   background: transparent;
   height: 12em;
@@ -149,7 +154,7 @@ body.blog .x-slider-container.below {
   border-bottom: rgba(255, 255, 255, 0.8) 5px solid;
 }
 
-/* line 103, scss/partials/_global.scss */
+/* line 107, scss/partials/_global.scss */
 .left_half_circle {
   background: transparent;
   height: 12em;
@@ -166,7 +171,7 @@ body.blog .x-slider-container.below {
   border-bottom: rgba(255, 255, 255, 0.8) 5px solid;
 }
 
-/* line 119, scss/partials/_global.scss */
+/* line 123, scss/partials/_global.scss */
 .right_arrow {
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
@@ -179,7 +184,7 @@ body.blog .x-slider-container.below {
   margin-left: -6px;
 }
 
-/* line 131, scss/partials/_global.scss */
+/* line 135, scss/partials/_global.scss */
 .left_arrow {
   transform: rotate(135deg);
   -webkit-transform: rotate(135deg);
@@ -192,7 +197,7 @@ body.blog .x-slider-container.below {
   margin-left: 37px;
 }
 
-/* line 143, scss/partials/_global.scss */
+/* line 147, scss/partials/_global.scss */
 .el67.x-frame {
   width: 100%;
   max-width: 100% !important;
@@ -234,6 +239,17 @@ header .x-navbar .desktop .x-nav > li > a {
 /* line 17, scss/partials/_header.scss */
 .x-navbar .desktop .sub-menu a {
   color: #2d333a !important;
+}
+
+/* line 20, scss/partials/_header.scss */
+.x-nav > .right {
+  float: right;
+}
+@media all and (max-width: 1375px) {
+  /* line 20, scss/partials/_header.scss */
+  .x-nav > .right {
+    float: none;
+  }
 }
 
 /* line 2, scss/partials/_thin-brick-veneer.scss */
@@ -474,6 +490,7 @@ footer a {
   width: 100%;
   background-size: cover;
   background-position: 50%;
+  padding: 0 !important;
 }
 /* line 6, scss/partials/_mixins.scss */
 .slider_50 img {
@@ -486,20 +503,32 @@ footer a {
     opacity: 1.0;
   }
 }
+@media all and (max-width: 1120px) {
+  /* line 1, scss/partials/_interiors.scss */
+  .slider_50 {
+    vertical-align: middle !important;
+    padding: 0 !important;
+  }
+}
 
-/* line 6, scss/partials/_interiors.scss */
+/* line 10, scss/partials/_interiors.scss */
+.center_image {
+  vertical-align: middle !important;
+}
+
+/* line 15, scss/partials/_interiors.scss */
 .specifications {
   width: 70%;
   margin-top: 2em !important;
   display: block;
 }
 @media all and (max-width: 900px) {
-  /* line 6, scss/partials/_interiors.scss */
+  /* line 15, scss/partials/_interiors.scss */
   .specifications {
     width: 100%;
   }
 }
-/* line 13, scss/partials/_interiors.scss */
+/* line 22, scss/partials/_interiors.scss */
 .specifications h3 {
   font-family: "Lato", sans-serif;
   font-weight: 500;
@@ -508,11 +537,11 @@ footer a {
   border-bottom: 1px solid #888888;
   margin-bottom: 0.75em;
 }
-/* line 21, scss/partials/_interiors.scss */
+/* line 30, scss/partials/_interiors.scss */
 .specifications p {
   font-size: 0.75em;
 }
-/* line 24, scss/partials/_interiors.scss */
+/* line 33, scss/partials/_interiors.scss */
 .specifications .spec_row {
   display: block;
   width: 100%;
@@ -524,17 +553,17 @@ footer a {
   display: table;
   clear: both;
 }
-/* line 30, scss/partials/_interiors.scss */
+/* line 39, scss/partials/_interiors.scss */
 .specifications hr {
   border-bottom: 1px solid #C0C0C0;
 }
-/* line 33, scss/partials/_interiors.scss */
+/* line 42, scss/partials/_interiors.scss */
 .specifications .label {
   display: inline-block;
   float: left;
   width: 45%;
 }
-/* line 38, scss/partials/_interiors.scss */
+/* line 47, scss/partials/_interiors.scss */
 .specifications .spec_val {
   display: inline-block;
   float: right;
@@ -542,11 +571,11 @@ footer a {
   text-align: right;
 }
 
-/* line 47, scss/partials/_interiors.scss */
+/* line 56, scss/partials/_interiors.scss */
 .ff_finds_txt .white_txt {
   padding: 1em 2em !important;
 }
-/* line 49, scss/partials/_interiors.scss */
+/* line 58, scss/partials/_interiors.scss */
 .ff_finds_txt .white_txt h4 {
   margin-top: 1.0em;
   font-style: italic;
@@ -556,13 +585,32 @@ footer a {
   line-height: 2.8;
 }
 
-/* line 60, scss/partials/_interiors.scss */
+/* line 69, scss/partials/_interiors.scss */
 .stone_buyer a {
   color: #a9b3c1;
 }
-/* line 62, scss/partials/_interiors.scss */
+/* line 71, scss/partials/_interiors.scss */
 .stone_buyer a:hover {
   color: rgba(255, 255, 255, 0.8);
+}
+
+/* line 77, scss/partials/_interiors.scss */
+.full_image_col {
+  margin: 0px;
+  width: 100%;
+  background-size: cover;
+  background-position: 50%;
+}
+/* line 6, scss/partials/_mixins.scss */
+.full_image_col img {
+  visibility: hidden;
+  opacity: 0;
+}
+@media all and (max-width: 900px) {
+  /* line 77, scss/partials/_interiors.scss */
+  .full_image_col {
+    opacity: 1.0;
+  }
 }
 
 /* line 1, scss/partials/_forms.scss */
@@ -632,4 +680,42 @@ h3.off_canvas_title {
   font-family: "Playfair Display", serif !important;
   font-size: 2em;
   margin-bottom: 1.0em;
+}
+
+/* line 2, scss/partials/_inspiration.scss */
+.inspiration_row .x-text {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  color: #ffffff !important;
+  margin: 0 0.5em 1.5em !important;
+  width: 100%;
+  text-align: center;
+}
+/* line 10, scss/partials/_inspiration.scss */
+.inspiration_row .x-text h4 {
+  color: #ffffff !important;
+  font-size: 1.25em;
+  margin-bottom: 0.05em;
+}
+/* line 15, scss/partials/_inspiration.scss */
+.inspiration_row .x-text p {
+  margin: 0;
+  font-size: 15px !important;
+}
+/* line 19, scss/partials/_inspiration.scss */
+.inspiration_row .x-text a {
+  color: #ffffff !important;
+}
+/* line 21, scss/partials/_inspiration.scss */
+.inspiration_row .x-text a:hover {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+/* line 29, scss/partials/_inspiration.scss */
+.inspiration_row .x-image img {
+  transition: opacity .6s;
+}
+/* line 31, scss/partials/_inspiration.scss */
+.inspiration_row .x-image img:hover {
+  opacity: 0.65 !important;
 }

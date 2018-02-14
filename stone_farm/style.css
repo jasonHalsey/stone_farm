@@ -14,24 +14,30 @@ Template: x
 body {
   font-size: 18px !important;
 }
+@media all and (max-width: 767px) {
+  /* line 4, scss/partials/_global.scss */
+  body p, body h2 {
+    text-align: center !important;
+  }
+}
 
-/* line 4, scss/partials/_global.scss */
+/* line 9, scss/partials/_global.scss */
 a {
   transition: all 0.15s linear;
 }
 
-/* line 8, scss/partials/_global.scss */
+/* line 13, scss/partials/_global.scss */
 .x-image img {
   width: 100% !important;
 }
 
-/* line 12, scss/partials/_global.scss */
+/* line 17, scss/partials/_global.scss */
 .x-navbar {
   background-color: #2d333a;
   opacity: 0.8;
 }
 
-/* line 17, scss/partials/_global.scss */
+/* line 22, scss/partials/_global.scss */
 .img_50-50_left {
   margin: 0px;
   width: 100%;
@@ -44,12 +50,12 @@ a {
   opacity: 0;
 }
 @media all and (max-width: 900px) {
-  /* line 17, scss/partials/_global.scss */
+  /* line 22, scss/partials/_global.scss */
   .img_50-50_left {
     opacity: 1.0;
   }
 }
-/* line 19, scss/partials/_global.scss */
+/* line 24, scss/partials/_global.scss */
 .img_50-50_left .x-text-headline {
   position: absolute;
   top: 30%;
@@ -59,13 +65,13 @@ a {
   text-align: center;
   background-color: rgba(0, 0, 0, 0.4) !important;
 }
-/* line 27, scss/partials/_global.scss */
+/* line 32, scss/partials/_global.scss */
 .img_50-50_left .x-text-headline h2 {
   margin: 0 !important;
   line-height: 2 !important;
 }
 
-/* line 33, scss/partials/_global.scss */
+/* line 38, scss/partials/_global.scss */
 .img_50-50_right {
   margin: 0px;
   width: 100%;
@@ -78,12 +84,12 @@ a {
   opacity: 0;
 }
 @media all and (max-width: 900px) {
-  /* line 33, scss/partials/_global.scss */
+  /* line 38, scss/partials/_global.scss */
   .img_50-50_right {
     opacity: 1.0;
   }
 }
-/* line 35, scss/partials/_global.scss */
+/* line 40, scss/partials/_global.scss */
 .img_50-50_right .x-text-headline {
   position: absolute;
   top: 30%;
@@ -93,13 +99,13 @@ a {
   text-align: center;
   background-color: rgba(0, 0, 0, 0.4) !important;
 }
-/* line 43, scss/partials/_global.scss */
+/* line 48, scss/partials/_global.scss */
 .img_50-50_right .x-text-headline h2 {
   margin: 0 !important;
   line-height: 2 !important;
 }
 
-/* line 51, scss/partials/_global.scss */
+/* line 56, scss/partials/_global.scss */
 h1, h2, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: "Playfair Display", serif !important;
   font-style: normal;
@@ -107,37 +113,37 @@ h1, h2, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   text-transform: uppercase;
 }
 
-/* line 57, scss/partials/_global.scss */
+/* line 62, scss/partials/_global.scss */
 p {
   font-size: 18px !important;
   line-height: 2.2 !important;
 }
 
-/* line 61, scss/partials/_global.scss */
+/* line 66, scss/partials/_global.scss */
 .el77.x-text {
   font-size: 18px !important;
 }
 
-/* line 64, scss/partials/_global.scss */
+/* line 69, scss/partials/_global.scss */
 .white_txt {
   color: #ffffff !important;
 }
-/* line 66, scss/partials/_global.scss */
+/* line 71, scss/partials/_global.scss */
 .white_txt h1, .white_txt h2, .white_txt h3, .white_txt h4, .white_txt h5, .white_txt h6, .white_txt .h1, .white_txt .h2, .white_txt .h3, .white_txt .h4, .white_txt .h5, .white_txt .h6 {
   color: #ffffff !important;
 }
-/* line 69, scss/partials/_global.scss */
+/* line 74, scss/partials/_global.scss */
 .white_txt hr {
   color: #ffffff;
   border-color: #ffffff;
 }
 
-/* line 75, scss/partials/_global.scss */
+/* line 80, scss/partials/_global.scss */
 body.blog .x-slider-container.below {
   border-bottom: 5px solid #2d333a !important;
 }
 
-/* line 91, scss/partials/_global.scss */
+/* line 96, scss/partials/_global.scss */
 .right_half_circle {
   background: transparent;
   height: 12em;
@@ -153,8 +159,14 @@ body.blog .x-slider-container.below {
   border-right: rgba(255, 255, 255, 0.8) 5px solid;
   border-bottom: rgba(255, 255, 255, 0.8) 5px solid;
 }
+@media all and (max-width: 767px) {
+  /* line 96, scss/partials/_global.scss */
+  .right_half_circle {
+    opacity: 0;
+  }
+}
 
-/* line 107, scss/partials/_global.scss */
+/* line 115, scss/partials/_global.scss */
 .left_half_circle {
   background: transparent;
   height: 12em;
@@ -170,8 +182,14 @@ body.blog .x-slider-container.below {
   border-left: rgba(255, 255, 255, 0.8) 5px solid;
   border-bottom: rgba(255, 255, 255, 0.8) 5px solid;
 }
+@media all and (max-width: 767px) {
+  /* line 115, scss/partials/_global.scss */
+  .left_half_circle {
+    opacity: 0;
+  }
+}
 
-/* line 123, scss/partials/_global.scss */
+/* line 134, scss/partials/_global.scss */
 .right_arrow {
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
@@ -183,8 +201,14 @@ body.blog .x-slider-container.below {
   margin-top: 4em;
   margin-left: -6px;
 }
+@media all and (max-width: 767px) {
+  /* line 134, scss/partials/_global.scss */
+  .right_arrow {
+    opacity: 0;
+  }
+}
 
-/* line 135, scss/partials/_global.scss */
+/* line 149, scss/partials/_global.scss */
 .left_arrow {
   transform: rotate(135deg);
   -webkit-transform: rotate(135deg);
@@ -196,8 +220,14 @@ body.blog .x-slider-container.below {
   margin-top: 4em;
   margin-left: 37px;
 }
+@media all and (max-width: 767px) {
+  /* line 149, scss/partials/_global.scss */
+  .left_arrow {
+    opacity: 0;
+  }
+}
 
-/* line 147, scss/partials/_global.scss */
+/* line 164, scss/partials/_global.scss */
 .el67.x-frame {
   width: 100%;
   max-width: 100% !important;
@@ -214,6 +244,11 @@ body.blog .x-slider-container.below {
   position: absolute !important;
   width: 100%;
   text-align: center;
+}
+
+/* line 9, scss/partials/_home.scss */
+.sect_header {
+  text-shadow: 2px 2px 8px black;
 }
 
 /* line 2, scss/partials/_header.scss */
@@ -333,25 +368,38 @@ h3.color_title {
   text-shadow: 2px 2px 2px black;
 }
 
-/* line 3, scss/partials/_woocommerce.scss */
-.color_row .woocommerce ul.products {
-  max-width: 50%;
+/* line 53, scss/partials/_thin-brick-veneer.scss */
+.img_bloc img {
+  width: 100%;
+  height: auto;
+}
+
+/* line 2, scss/partials/_woocommerce.scss */
+.color_row .woocommerce {
+  width: 45%;
+  float: left;
+  margin: 0.5em;
 }
 /* line 6, scss/partials/_woocommerce.scss */
+.color_row .woocommerce ul.products {
+  max-width: 100%;
+}
+/* line 9, scss/partials/_woocommerce.scss */
 .color_row .woocommerce ul.products li div.entry-featured {
   display: inline-block;
   float: left;
 }
-/* line 10, scss/partials/_woocommerce.scss */
+/* line 13, scss/partials/_woocommerce.scss */
 .color_row .woocommerce ul.products li div.entry-wrap {
   display: inline-block;
   float: left;
   box-shadow: none;
   width: 100%;
 }
-/* line 17, scss/partials/_woocommerce.scss */
+/* line 20, scss/partials/_woocommerce.scss */
 .color_row .woocommerce ul.products li.product {
   float: left;
+  width: 100%;
   overflow: hidden;
   position: relative;
   margin: 0 4% 4.5% 0;
@@ -360,7 +408,7 @@ h3.color_title {
   border-radius: 4px;
   box-shadow: 0 0.15em 0.35em 0 rgba(0, 0, 0, 0.135);
 }
-/* line 27, scss/partials/_woocommerce.scss */
+/* line 31, scss/partials/_woocommerce.scss */
 .color_row .woocommerce ul.products li.product .entry-header .button {
   position: relative !important;
   top: 0 !important;
@@ -372,7 +420,14 @@ h3.color_title {
   font-size: 14px;
   opacity: 1 !important;
 }
-/* line 42, scss/partials/_woocommerce.scss */
+@media all and (max-width: 767px) {
+  /* line 2, scss/partials/_woocommerce.scss */
+  .color_row .woocommerce {
+    width: 100%;
+    margin: 0.5em 0;
+  }
+}
+/* line 50, scss/partials/_woocommerce.scss */
 .color_row .woocommerce ul.products .x-btn, .color_row .woocommerce ul.products .button, .color_row .woocommerce ul.products [type="submit"] {
   color: #fff;
   border-color: #000;
@@ -382,12 +437,12 @@ h3.color_title {
   box-shadow: 0 0.25em 0 0 #000, 0 4px 9px rgba(0, 0, 0, 0.75);
   border-radius: 0.25em;
 }
-/* line 51, scss/partials/_woocommerce.scss */
+/* line 59, scss/partials/_woocommerce.scss */
 .color_row .woocommerce ul.products li div.entry-featured {
   display: none;
 }
 
-/* line 57, scss/partials/_woocommerce.scss */
+/* line 65, scss/partials/_woocommerce.scss */
 .cart [type="submit"] {
   color: #fff;
   border-color: #000;
@@ -398,7 +453,7 @@ h3.color_title {
   border-radius: 0.25em;
 }
 
-/* line 68, scss/partials/_woocommerce.scss */
+/* line 76, scss/partials/_woocommerce.scss */
 .entry-product a.button {
   color: #fff;
   border-color: #000;
@@ -409,7 +464,7 @@ h3.color_title {
   border-radius: 0.25em;
 }
 
-/* line 79, scss/partials/_woocommerce.scss */
+/* line 87, scss/partials/_woocommerce.scss */
 .x-btn, .button, [type="submit"] {
   color: #fff !important;
   border-color: #000 !important;
@@ -610,6 +665,20 @@ footer a {
   /* line 77, scss/partials/_interiors.scss */
   .full_image_col {
     opacity: 1.0;
+  }
+}
+
+@media all and (max-width: 767px) {
+  /* line 81, scss/partials/_interiors.scss */
+  .el82.x-text, .el104.x-text, .el23.x-text {
+    padding-right: 0 !important;
+  }
+}
+
+@media all and (max-width: 767px) {
+  /* line 87, scss/partials/_interiors.scss */
+  .el97.x-text, .el38.x-text {
+    padding-left: 0 !important;
   }
 }
 

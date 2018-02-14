@@ -77,3 +77,16 @@
 .full_image_col{
   @include img_half;
 }
+
+.el82.x-text,.el104.x-text,.el23.x-text{
+  @media all and (max-width: 767px) {
+    padding-right: 0!important;
+  }
+}
+
+.el97.x-text,.el38.x-text{
+  @media all and (max-width: 767px) {
+    padding-left: 0!important;
+  }
+}
+

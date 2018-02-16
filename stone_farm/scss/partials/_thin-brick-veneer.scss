@@ -54,5 +54,29 @@ h3.color_title{
 		width:100%;
 		height:auto;
 	}
+	a{
+		
+		img{
+			width:100%;
+			height:auto;
+			display: block;
+			
+		}
+	}
 }
 
+.map_bloc{
+	min-height: 400px;
+	a.x-image{
+		display: block;
+	}
+	img{
+		width:100%;
+		height:auto;
+		opacity: 0;
+	}
+	@media all and (max-width: 1320px) {
+
+
+	}
+}

@@ -174,3 +174,15 @@ i {
     overflow: hidden;
 }
 
+.overlay_txt{
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 1);
+}
+
+.x-menu-collapsed .x-anchor-sub-indicator {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 85px;
+    padding: 20px 0px;
+}

@@ -28,6 +28,19 @@ add_filter( 'x_enqueue_parent_stylesheet', '__return_true' );
 add_filter('show_admin_bar', '__return_false');
 
 
+/*  Enqueue scripts
+/* ------------------------------------ */ 
+
+	function wpb_adding_scripts() {
+
+		$vars = "value";
+		wp_register_script('app', get_stylesheet_directory_uri() . '/js/stone_farm.js');
+
+		wp_enqueue_script('app');
+
+	}
+	add_action( 'wp_footer', 'wpb_adding_scripts' ); 
+
 
 // WooCommerce Functions
 // =============================================================================
@@ -89,3 +102,39 @@ function cc_mime_types($mimes) {
   return $mimes;
 }
 add_filter('upload_mimes', 'cc_mime_types');
+
+
+// Add Title Support
+// =============================================================================
+add_filter( 'the_seo_framework_force_title_fix', '__return_true' );
+
+function x_wp_title( $title ) { return $title; }
+
+/*THIS CODE WILL BE OUTPUT INSIDE THE <HEAD> tag*/
+add_action('wp_head','my_tracking', 1);
+function my_tracking () { ?>
+  <!-- Google Tag Manager -->
+
+<script>
+
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P48CTBL');</script>
+<!-- End Google Tag Manager -->
+<?php }
+
+// Add Google Tag Manager Code
+// =============================================================================
+function add_google_tag_manager_code(){
+?>
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P48CTBL"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<?php 
+}
+add_action( 'x_before_site_begin', 'add_google_tag_manager_code' );
+// End Add Google Tag Manager Code
+// =============================================================================

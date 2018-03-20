@@ -242,6 +242,21 @@ body.blog .x-slider-container.below {
   overflow: hidden;
 }
 
+/* line 177, scss/partials/_global.scss */
+.overlay_txt {
+  text-shadow: 2px 2px 8px black;
+}
+
+/* line 181, scss/partials/_global.scss */
+.x-menu-collapsed .x-anchor-sub-indicator {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 85px;
+  padding: 20px 0px;
+}
+
 /* line 1, scss/partials/_home.scss */
 .hero_cta_row {
   bottom: 20%;
@@ -706,6 +721,13 @@ footer a {
   .el97.x-text, .el38.x-text {
     padding-left: 0 !important;
   }
+}
+
+/* line 94, scss/partials/_interiors.scss */
+.blog_img_col img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 /* line 1, scss/partials/_forms.scss */
